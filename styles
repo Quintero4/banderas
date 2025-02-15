@@ -1,0 +1,86 @@
+.flags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+.flag {
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    border: 2px solid black;
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Banderas */
+.spain { background: linear-gradient(to bottom, red 33%, yellow 33%, yellow 66%, red 66%); }
+.uk { background: url('https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg') center/cover; }
+.usa { background: url('https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg') center/cover; }
+.france { background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%); }
+.germany { background: linear-gradient(to bottom, black 33%, red 33%, red 66%, yellow 66%); }
+.italy { background: linear-gradient(to right, green 33%, white 33%, white 66%, red 66%); }
+.japan { background: white; position: relative; }
+.japan::before {
+    content: ''; width: 50px; height: 50px; background: red; border-radius: 50%;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.argentina { background: linear-gradient(to bottom, lightblue 33%, white 33%, white 66%, lightblue 66%); position: relative; }
+.argentina::before {
+    content: ''; width: 30px; height: 30px; background: gold; border-radius: 50%;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.thailand { background: linear-gradient(to bottom, red 20%, white 20%, white 40%, blue 40%, blue 60%, white 60%, white 80%, red 80%); }
+.brazil { background: url('https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg') center/cover; }
+.canada { background: url('https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg') center/cover; }
+.madagascar { background: url('https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg') center/cover; }
+.india { background: url('https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg') center/cover; }
+.mexico { background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg') center/cover; }
+.south-korea { background: url('https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg') center/cover; }
+.australia { background: url('https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg') center/cover; }
+.russia { background: url('https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg') center/cover; }
+.south-africa { background: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg') center/cover; }
+.norway { background: url('https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg') center/cover; }
+.sweden { background: url('https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg') center/cover; }
+.denmark { background: url('https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg') center/cover; }
+.finland { background: url('https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg') center/cover; }
+.iceland { background: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg') center/cover; }
+.netherlands { background: url('https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg') center/cover; }
+.belgium { background: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg') center/cover; }
+.switzerland { background: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg') center/cover; }
+.austria { background: url('https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg') center/cover; }
+.portugal { background: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg') center/cover; }
+.greece { background: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg') center/cover; }
+.turkey { background: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg') center/cover; }
+.poland { background: url('https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg') center/cover; }
+.czech-republic { background: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg') center/cover; }
+.hungary { background: url('https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg') center/cover; }
+.romania { background: url('https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg') center/cover; }
+.bulgaria { background: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg') center/cover; }
+.serbia { background: url('https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg') center/cover; }
+.croatia { background: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg') center/cover; }
+.ukraine { background: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg') center/cover; }
+.belarus { background: url('https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg') center/cover; }
+.slovakia { background: url('https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg') center/cover; }
+.slovenia { background: url('https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg') center/cover; }
+.estonia { background: url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg') center/cover; }
+.latvia { background: url('https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg') center/cover; }
+.lithuania { background: url('https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg') center/cover; }
+.egypt { background: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg') center/cover; }
+.morocco { background: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg') center/cover; }
+.nigeria { background: url('https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg') center/cover; }
+.kenya { background: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg') center/cover; }
+.argentina { background: url('https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg') center/cover; }
+.chile { background: url('https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg') center/cover; }
+.peru { background: url('https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg') center/cover; }
+.colombia { background: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg') center/cover; }
+.venezuela { background: url('https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg') center/cover; }
+.uruguay { background: url('https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg') center/cover; }
